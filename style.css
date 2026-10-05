@@ -1,0 +1,366 @@
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+html {
+    scroll-behavior: smooth;
+}
+
+body {
+    font-family: Arial, sans-serif;
+    color: #1e293b;
+}
+
+nav {
+    background-color: #1e293b;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 18px 60px;
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+}
+
+.logo {
+    color: white;
+    font-size: 24px;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+    gap: 30px;
+}
+
+nav ul li a {
+    color: white;
+    text-decoration: none;
+    font-size: 16px;
+}
+
+nav ul li a:hover {
+    color: #38bdf8;
+}
+
+.hero {
+    min-height: 500px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    background-color: #f1f5f9;
+}
+
+.hero-content {
+    max-width: 700px;
+    padding: 40px;
+}
+
+.hero h1 {
+    font-size: 52px;
+    color: #1e293b;
+    margin-bottom: 20px;
+}
+
+.hero p {
+    font-size: 18px;
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 30px;
+}
+
+.hero-btn {
+    display: inline-block;
+    background-color: #2563eb;
+    color: white;
+    padding: 14px 28px;
+    text-decoration: none;
+    border-radius: 6px;
+    font-size: 16px;
+}
+
+.hero-btn:hover {
+    background-color: #1d4ed8;
+}
+
+.events {
+    padding: 80px 60px;
+    text-align: center;
+    background-color: white;
+}
+
+.events h2,
+.clubs h2,
+.register h2,
+.contact h2 {
+    font-size: 36px;
+    color: #1e293b;
+    margin-bottom: 10px;
+}
+
+.section-description {
+    color: #64748b;
+    margin-bottom: 40px;
+}
+
+.event-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.event-card {
+    width: 300px;
+    padding: 30px;
+    background-color: #f8fafc;
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.event-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.event-card h3 {
+    font-size: 22px;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.event-card p {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 10px;
+}
+
+.event-card a {
+    display: inline-block;
+    margin-top: 10px;
+    padding: 10px 16px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.event-card a:hover {
+    background-color: #1d4ed8;
+}
+
+.clubs {
+    padding: 80px 60px;
+    text-align: center;
+    background-color: #f1f5f9;
+}
+
+.club-container {
+    display: flex;
+    justify-content: center;
+    gap: 30px;
+    flex-wrap: wrap;
+}
+
+.club-card {
+    width: 260px;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    text-align: left;
+    border: 1px solid #e2e8f0;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    transition: 0.3s;
+}
+
+.club-card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 8px 18px rgba(0, 0, 0, 0.12);
+}
+
+.club-card h3 {
+    font-size: 21px;
+    color: #1e293b;
+    margin-bottom: 15px;
+}
+
+.club-card p {
+    color: #64748b;
+    line-height: 1.6;
+    margin-bottom: 15px;
+}
+
+.club-card a {
+    display: inline-block;
+    padding: 10px 16px;
+    background-color: #2563eb;
+    color: white;
+    text-decoration: none;
+    border-radius: 6px;
+}
+
+.club-card a:hover {
+    background-color: #1d4ed8;
+}
+
+.register {
+    padding: 80px 60px;
+    background-color: white;
+    text-align: center;
+}
+
+.registration-form {
+    max-width: 650px;
+    margin: 40px auto 0;
+    padding: 40px;
+    background-color: #f8fafc;
+    border: 1px solid #e2e8f0;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+    text-align: left;
+}
+
+.form-group {
+    margin-bottom: 20px;
+}
+
+.form-group label {
+    display: block;
+    margin-bottom: 8px;
+    color: #1e293b;
+    font-weight: bold;
+}
+
+.form-group input,
+.form-group select,
+.form-group textarea {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #cbd5e1;
+    border-radius: 6px;
+    font-size: 16px;
+    font-family: inherit;
+}
+
+.form-group input:focus,
+.form-group select:focus,
+.form-group textarea:focus {
+    outline: none;
+    border-color: #2563eb;
+}
+
+.registration-form button {
+    width: 100%;
+    padding: 14px;
+    background-color: #2563eb;
+    color: white;
+    border: none;
+    border-radius: 6px;
+    font-size: 16px;
+    font-weight: bold;
+    cursor: pointer;
+}
+
+.registration-form button:hover {
+    background-color: #1d4ed8;
+}
+
+.contact {
+    padding: 80px 60px;
+    text-align: center;
+    background-color: #f1f5f9;
+}
+
+.contact-info {
+    max-width: 500px;
+    margin: 0 auto;
+    padding: 30px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.08);
+}
+
+.contact-info p {
+    color: #64748b;
+    margin-bottom: 15px;
+}
+
+.contact-info p:last-child {
+    margin-bottom: 0;
+}
+
+footer {
+    background-color: #1e293b;
+    color: white;
+    text-align: center;
+    padding: 25px;
+}
+
+@media (max-width: 768px) {
+    nav {
+        padding: 18px 25px;
+        flex-direction: column;
+        gap: 15px;
+    }
+
+    nav ul {
+        gap: 15px;
+        flex-wrap: wrap;
+        justify-content: center;
+    }
+
+    nav ul li a {
+        font-size: 14px;
+    }
+
+    .hero {
+        min-height: 450px;
+    }
+
+    .hero-content {
+        padding: 25px;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+    }
+
+    .hero p {
+        font-size: 16px;
+    }
+
+    .events,
+    .clubs,
+    .register,
+    .contact {
+        padding: 60px 20px;
+    }
+
+    .events h2,
+    .clubs h2,
+    .register h2,
+    .contact h2 {
+        font-size: 30px;
+    }
+
+    .event-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .club-card {
+        width: 100%;
+        max-width: 400px;
+    }
+
+    .registration-form {
+        padding: 25px;
+    }
+}
